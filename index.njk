@@ -9,9 +9,9 @@ navtitle: Home
   <h1>Hello, I'm Joel!</h1>
   <p>I'm a frontend web developer from Melbourne, Australia</p>
   <div class="follow__me">
-    <a href="https://twitter.com/joel_krause">Twitter</a>
-    <a href="https://twitter.com/joel_krause">LinkedIn</a>
-    <a href="https://twitter.com/joel_krause">CodePen</a>
+    <a href="https://twitter.com/Joel_Krause?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-dnt="true"
+      data-show-count="false" data-size="large">Follow @Joel_Krause</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
 
@@ -19,5 +19,3 @@ navtitle: Home
 
 {% set postslist = collections.posts | head(-6) %}
 {% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
