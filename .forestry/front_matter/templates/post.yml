@@ -19,5 +19,6 @@ fields:
 - type: text
   name: layout
   label: Layout
+  default: layouts/post.njk
 pages:
 - posts/testing-forestry.md
