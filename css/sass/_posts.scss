@@ -1,0 +1,17 @@
+.postlist-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-left: -15px;
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+
+  &-link {
+    flex-grow: 1;
+  }
+  &-tags{
+      width: 100%;
+  }
+}

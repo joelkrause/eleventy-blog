@@ -1,10 +1,19 @@
-@import url("https://rsms.me/inter/inter.css");
-body, html {
-  font-family: 'Inter';
+body,
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+}
+
+* {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .container {
-  max-width: 65vw;
+  max-width: 960px;
+  padding: 0 25px;
   margin: 0 auto;
 }
 
@@ -17,7 +26,7 @@ body, html {
 }
 
 header {
-  padding: 15px 0;
+  padding: 2rem 0;
 }
 
 header .container {
@@ -57,6 +66,9 @@ header .logo span {
 }
 
 header .nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,5 +93,43 @@ header .nav li.nav-item-active a {
 header .nav li a {
   color: #000;
   text-decoration: none;
+}
+
+header .social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .social li {
+  margin: 0;
+  padding: 0;
+}
+
+.postlist-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+  margin-left: -15px;
+}
+
+.postlist-item:hover {
+  background-color: #f8f8f8;
+}
+
+.postlist-item-link {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.postlist-item-tags {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

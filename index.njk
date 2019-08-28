@@ -1,23 +1,21 @@
 ---
 layout: layouts/home.njk
 tags:
-  - nav
+- nav
 navtitle: Home
 ---
 
 <div class="home__hero">
-<div class="container">
-<h1>I'm Joel!</h1>
-<p>I'm a frontend web developer from Melbourne, Australia</p>
-<div class="follow__me">
-<a href="https://twitter.com/joel_krause">Twitter</a>
-<a href="https://twitter.com/joel_krause">LinkedIn</a>
-<a href="https://twitter.com/joel_krause">CodePen</a>
-</div>
-</div>
+  <h1>Hello, I'm Joel!</h1>
+  <p>I'm a frontend web developer from Melbourne, Australia</p>
+  <div class="follow__me">
+    <a href="https://twitter.com/joel_krause">Twitter</a>
+    <a href="https://twitter.com/joel_krause">LinkedIn</a>
+    <a href="https://twitter.com/joel_krause">CodePen</a>
+  </div>
 </div>
 
-<h1>Latest Posts</h1>
+<h1>Latest Articles</h1>
 
 {% set postslist = collections.posts | head(-6) %}
 {% include "postslist.njk" %}

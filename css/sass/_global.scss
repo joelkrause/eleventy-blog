@@ -1,17 +1,25 @@
-@import url('https://rsms.me/inter/inter.css');
-
-body,html{
-    font-family:'Inter';
+body,
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
 }
 
-.container{
-    max-width: 65vw;
-    margin: 0 auto;
+* {
+  box-sizing: content-box;
 }
 
-.home__hero{
-    padding: 5vw 0;
-    h1 {
-        font-size: 3rem;
-    }
+.container {
+  max-width: 960px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.home__hero {
+  padding: 5vw 0;
+
+  h1 {
+    font-size: 3rem;
+  }
 }
