@@ -9,3 +9,5 @@ layout: layouts/post.njk
 
 ---
 Hi
+
+![](/img/116EB6F9-9985-4267-9925-BAE8053192A4.png)
