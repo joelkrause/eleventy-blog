@@ -1,4 +1,9 @@
 ---
 label: Post Template
 hide_body: false
-fields: []
+fields:
+- name: post_title
+  type: text
+  config:
+    required: false
+  label: Post Title
