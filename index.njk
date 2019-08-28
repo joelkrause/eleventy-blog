@@ -5,9 +5,21 @@ tags:
 navtitle: Home
 ---
 
-<h1>Latest 3 Posts</h1>
+<div class="home__hero">
+<div class="container">
+<h1>I'm Joel!</h1>
+<p>I'm a frontend web developer from Melbourne, Australia</p>
+<div class="follow__me">
+<a href="https://twitter.com/joel_krause">Twitter</a>
+<a href="https://twitter.com/joel_krause">LinkedIn</a>
+<a href="https://twitter.com/joel_krause">CodePen</a>
+</div>
+</div>
+</div>
 
-{% set postslist = collections.posts | head(-3) %}
+<h1>Latest Posts</h1>
+
+{% set postslist = collections.posts | head(-6) %}
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>

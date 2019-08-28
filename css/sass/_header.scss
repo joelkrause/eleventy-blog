@@ -1,0 +1,50 @@
+header{
+    padding: 15px 0;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color:#000;
+        }
+    h1{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border-radius: 50%;
+        max-width: 60px;
+    }
+    span{
+        padding-left: 15px;
+        font-weight: 700;
+    }
+}
+    .nav{
+        display: flex;
+        list-style: none;
+        padding: 0 0 0 25px;
+        margin: 0;
+        li{
+        padding: 0;
+        margin: 0;
+            &:not(:last-of-type){
+                margin-right: 15px;
+            }
+            &.nav-item-active{
+                a{
+                    text-decoration: underline;
+                }
+            }
+            a{
+                color:#000;
+                text-decoration: none;
+            }
+        }
+    }
+}

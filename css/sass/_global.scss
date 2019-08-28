@@ -1,0 +1,17 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body,html{
+    font-family:'Inter';
+}
+
+.container{
+    max-width: 65vw;
+    margin: 0 auto;
+}
+
+.home__hero{
+    padding: 5vw 0;
+    h1 {
+        font-size: 3rem;
+    }
+}
