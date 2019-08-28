@@ -13,7 +13,7 @@ sections:
   match: "**/*"
   exclude: posts.json
   templates:
-  - post-template
+  - post
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
