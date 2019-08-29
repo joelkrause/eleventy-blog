@@ -1,9 +1,27 @@
+@import url("https://rsms.me/inter/inter.css");
+:root {
+  --mainColor: #222;
+}
+
 body,
 html {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* Adjust font size */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
+  color: var(--mainColor);
 }
 
 * {
@@ -30,7 +48,7 @@ a.button {
   min-width: 120px;
   text-align: center;
   background-color: #ececec;
-  color: #000;
+  color: var(--mainColor);
   border-radius: 3px;
   text-decoration: none;
   font-size: 1rem;
@@ -53,7 +71,7 @@ a.button {
 
 .post__header a {
   text-decoration: none;
-  color: #000;
+  color: var(--mainColor);
 }
 
 .site__header {
@@ -81,7 +99,7 @@ a.button {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #000;
+  color: var(--mainColor);
 }
 
 .site__header .logo h1 {
@@ -126,7 +144,7 @@ a.button {
 }
 
 .site__header .nav li a {
-  color: #000;
+  color: var(--mainColor);
   text-decoration: none;
 }
 

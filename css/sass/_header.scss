@@ -13,7 +13,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #000;
+      color: var(--mainColor);
     }
 
     h1 {
@@ -55,7 +55,7 @@
       }
 
       a {
-        color: #000;
+        color: var(--mainColor);
         text-decoration: none;
       }
     }
