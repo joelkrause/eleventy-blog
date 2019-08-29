@@ -15,7 +15,10 @@ navtitle: Home
   </div>
 </div>
 
-<h1>Latest Articles</h1>
+<header class="post__header">
+  <h1>Latest Articles</h1>
+  <a href="{{ '/posts/' | url }}">See All Posts</a>
+</header>
 
 {% set postslist = collections.posts | head(-6) %}
 {% include "postslist.njk" %}

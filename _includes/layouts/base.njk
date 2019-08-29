@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <header>
+  <header class="site__header">
     <div class="container">
       <div class="logo">
-        <a href="{{ '/' | url }}"><img src="{{ '/img/fc-profile.jpg' | url }}" /><span>Joel Krause</span></a>
+        <a href="{{ '/' | url }}">Joel Krause</a>
       </div>
       <ul class="nav">
         {%- for nav in collections.nav | reverse -%}

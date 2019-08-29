@@ -25,11 +25,18 @@ html {
   font-size: 3rem;
 }
 
-header {
-  padding: 2rem 0;
+a.button {
+  padding: 10px;
+  min-width: 120px;
+  text-align: center;
+  background-color: #ececec;
+  color: #000;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-header .container {
+.post__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +45,35 @@ header .container {
           align-items: center;
 }
 
-header .logo a {
+.post__header h1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.post__header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.site__header {
+  padding: 2rem 0;
+}
+
+.site__header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site__header .logo {
+  font-weight: 700;
+}
+
+.site__header .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,23 +84,23 @@ header .logo a {
   color: #000;
 }
 
-header .logo h1 {
+.site__header .logo h1 {
   font-size: 1rem;
   margin: 0;
   padding: 0;
 }
 
-header .logo img {
+.site__header .logo img {
   border-radius: 50%;
   max-width: 60px;
 }
 
-header .logo span {
+.site__header .logo span {
   padding-left: 15px;
   font-weight: 700;
 }
 
-header .nav {
+.site__header .nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -77,25 +112,25 @@ header .nav {
   margin: 0;
 }
 
-header .nav li {
+.site__header .nav li {
   padding: 0;
   margin: 0;
 }
 
-header .nav li:not(:last-of-type) {
+.site__header .nav li:not(:last-of-type) {
   margin-right: 15px;
 }
 
-header .nav li.nav-item-active a {
+.site__header .nav li.nav-item-active a {
   text-decoration: underline;
 }
 
-header .nav li a {
+.site__header .nav li a {
   color: #000;
   text-decoration: none;
 }
 
-header .social {
+.site__header .social {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -104,7 +139,7 @@ header .social {
   display: flex;
 }
 
-header .social li {
+.site__header .social li {
   margin: 0;
   padding: 0;
 }
