@@ -9,3 +9,4 @@ layout: layouts/post.njk
 
 ---
     Hi
+    <div>hi</div>
