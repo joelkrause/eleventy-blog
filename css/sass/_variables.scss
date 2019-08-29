@@ -1,5 +1,6 @@
-:root{
-    --mainColor: #222;
+:root {
+  --mainColor: #222;
+  --accentColor: #27ae60;
 }
 
 @function headings($from:1, $to:6) {

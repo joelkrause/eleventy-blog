@@ -1,20 +1,9 @@
-@import url('https://rsms.me/inter/inter.css');
+// @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,800&display=swap');
 
 body,
 html {
-  /* Adjust font size */
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  /* Font varient */
-  font-variant-ligatures: none;
-  -webkit-font-variant-ligatures: none;
-  /* Smoothing */
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Assistant', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
@@ -25,6 +14,10 @@ html {
   box-sizing: content-box;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 .container {
   max-width: 960px;
   padding: 0 25px;
@@ -33,10 +26,6 @@ html {
 
 .home__hero {
   padding: 5vw 0;
-
-  h1 {
-    font-size: 3rem;
-  }
 }
 
 a {
@@ -56,7 +45,7 @@ a {
   display: flex;
   align-items: center;
 
-  h1 {
+  h2 {
     flex-grow: 1;
   }
 

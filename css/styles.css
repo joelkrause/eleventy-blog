@@ -1,23 +1,12 @@
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,800&display=swap");
 :root {
   --mainColor: #222;
+  --accentColor: #27ae60;
 }
 
 body,
 html {
-  /* Adjust font size */
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  /* Font varient */
-  font-variant-ligatures: none;
-  -webkit-font-variant-ligatures: none;
-  /* Smoothing */
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Assistant', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
@@ -29,6 +18,10 @@ html {
           box-sizing: content-box;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 .container {
   max-width: 960px;
   padding: 0 25px;
@@ -37,10 +30,6 @@ html {
 
 .home__hero {
   padding: 5vw 0;
-}
-
-.home__hero h1 {
-  font-size: 3rem;
 }
 
 a.button {
@@ -63,7 +52,7 @@ a.button {
           align-items: center;
 }
 
-.post__header h1 {
+.post__header h2 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -184,5 +173,15 @@ a.button {
 
 .postlist-item-tags {
   width: 100%;
+}
+
+.postlist-item-tags a {
+  background-color: var(--accentColor);
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=styles.css.map */
