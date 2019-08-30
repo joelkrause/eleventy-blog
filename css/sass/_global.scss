@@ -1,9 +1,10 @@
 // @import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css?family=Assistant:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant:800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 
 body,
 html {
-  font-family: 'Assistant', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Roboto Mono', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
@@ -16,6 +17,10 @@ html {
 
 h1 {
   font-size: 3rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Assistant';
+    font-weight: 800;
 }
 
 .container {

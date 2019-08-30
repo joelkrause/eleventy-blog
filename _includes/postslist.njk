@@ -1,7 +1,7 @@
 {% for post in postslist | reverse %}
 <a href="{{ post.url | url }}" class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
   <div class="postlist-item-title">{{ post.data.title }}</div>
-  <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+  <time class="postlist-item-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
   <div class="postlist-item-tags">
     {% for tag in post.data.tags %}
     {%- if tag != "posts" -%}
