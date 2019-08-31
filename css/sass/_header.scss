@@ -1,7 +1,11 @@
 .site__header {
-  padding: 2rem;
+  padding: 10px 25px;
   display: flex;
   align-items: center;
+
+  @include breakpoint(up, xl) {
+    padding: 2rem;
+  }
 
   .logo {
     font-family: 'Assistant';
