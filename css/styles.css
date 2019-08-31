@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Assistant:800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700&display=swap");
 :root {
   --mainColor: #222;
   --accentColor: #27ae60;
@@ -8,10 +8,11 @@
 
 body,
 html {
-  font-family: 'Roboto Mono', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Source Serif Pro', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
+  line-height: 1.75rem;
   color: var(--mainColor);
 }
 
@@ -24,7 +25,12 @@ h1 {
   font-size: 3rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Assistant';
   font-weight: 800;
 }
@@ -71,10 +77,7 @@ a.button {
 }
 
 .site__header {
-  padding: 2rem 0;
-}
-
-.site__header .container {
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +87,8 @@ a.button {
 }
 
 .site__header .logo {
-  font-weight: 700;
+  font-family: 'Assistant';
+  font-weight: 800;
   font-size: 1.25rem;
 }
 

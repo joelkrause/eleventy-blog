@@ -1,13 +1,11 @@
 .site__header {
-  padding: 2rem 0;
-
-  .container {
-    display: flex;
-    align-items: center;
-  }
+  padding: 2rem;
+  display: flex;
+  align-items: center;
 
   .logo {
-    font-weight: 700;
+    font-family: 'Assistant';
+    font-weight: 800;
     font-size: 1.25rem;
 
     a {
