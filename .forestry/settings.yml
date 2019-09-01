@@ -4,10 +4,12 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: page
   label: Pages
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - page
