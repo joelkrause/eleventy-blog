@@ -21,4 +21,5 @@ fields:
   label: Layout
   default: layouts/post.njk
 pages:
+- page/about-me.md
 - posts/testing-forestry.md
