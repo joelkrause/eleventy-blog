@@ -11,8 +11,6 @@ sections:
   match: "**/*"
   templates:
   - page
-- type: heading
-  label: Content
 - type: directory
   path: posts
   label: Posts
