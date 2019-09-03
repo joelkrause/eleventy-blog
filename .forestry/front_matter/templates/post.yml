@@ -20,5 +20,10 @@ fields:
   name: layout
   label: Layout
   default: layouts/post.njk
+- name: featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Image
 pages:
 - posts/testing-forestry.md
