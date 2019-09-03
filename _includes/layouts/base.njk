@@ -11,19 +11,17 @@
 </head>
 
 <body>
+  <button type="button" id="nav__toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <header class="site__header">
-    <div class="logo">
-      <a href="{{ '/' | url }}">Joel Krause</a>
-    </div>
-    <ul class="nav">
-      {%- for nav in collections.nav | reverse -%}
-      <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a
-          href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
-      {%- endfor -%}
-    </ul>
-    <ul class="social">
-      <li><a href="#">Twitter</a></li>
-    </ul>
+    <nav class="site__header-nav">
+      <a href="/">Home</a>
+      <a href="/">Posts</a>
+      <a href="/">Contact</a>
+    </nav>
   </header>
   <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
     {{ content | safe }}

@@ -2,12 +2,17 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
+<a href="/" class="single_back"><- Back Home</a>
 <div class="container">
-<h1>{{ title }}</h1>
-{{ date | readableDate }}
-<div class="description">
-{{ description }}
-</div>
+  <div class="page__hero">
+    <h1>{{ title }}</h1>
+    <div class="date">
+      {{ date | readableDate }}
+    </div>
+    <div class="description">
+      {{ description }}
+    </div>
+  </div>
 
-{{ content | safe }}
+  {{ content | safe }}
 </div>

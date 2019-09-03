@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Assistant:800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700&display=swap");
+@import url("https://rsms.me/inter/inter.css");
 :root {
   --mainColor: #222;
   --accentColor: #27ae60;
@@ -240,7 +239,7 @@ div.code-toolbar > .toolbar span:focus {
 
 body,
 html {
-  font-family: 'Source Serif Pro', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
@@ -263,7 +262,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Assistant';
   font-weight: 800;
 }
 
@@ -273,8 +271,30 @@ h6 {
   margin: 0 auto;
 }
 
-.home__hero {
-  padding: 10vw 0;
+a.single_back {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+.page__hero {
+  padding: 7.5vw 0;
+}
+
+.page__hero img.profile_image {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.page__hero .date {
+  margin: 15px 0 25px;
+}
+
+.page__hero .description {
+  color: #808080;
+  font-size: 1.5rem;
 }
 
 a.button {
@@ -308,97 +328,71 @@ a.button {
   color: var(--mainColor);
 }
 
+button#nav__toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 6;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+button#nav__toggle span {
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: var(--mainColor);
+}
+
+button#nav__toggle span:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
 .site__header {
-  padding: 10px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.site__header-nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-@media (min-width: 1200px) {
-  .site__header {
-    padding: 2rem;
-  }
-}
-
-.site__header .logo {
-  font-family: 'Assistant';
-  font-weight: 800;
-  font-size: 1.25rem;
-}
-
-.site__header .logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
+.site__header-nav a {
   color: var(--mainColor);
-}
-
-.site__header .logo h1 {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.site__header .logo img {
-  border-radius: 50%;
-  max-width: 60px;
-}
-
-.site__header .logo span {
-  padding-left: 15px;
-  font-weight: 700;
-}
-
-.site__header .nav {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  padding: 0 0 0 25px;
-  margin: 0;
-}
-
-.site__header .nav li {
-  padding: 0;
-  margin: 0;
-}
-
-.site__header .nav li:not(:last-of-type) {
-  margin-right: 15px;
-}
-
-.site__header .nav li.nav-item-active a {
-  text-decoration: underline;
-}
-
-.site__header .nav li a {
-  color: var(--mainColor);
+  font-size: 4rem;
+  line-height: normal;
   text-decoration: none;
-}
-
-.site__header .social {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.site__header .social li {
-  margin: 0;
-  padding: 0;
 }
 
 .postlist-item {
