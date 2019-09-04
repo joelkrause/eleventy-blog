@@ -36,6 +36,12 @@ button {
   display: flex;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.25s;
+
+  .menu__open & {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &-nav {
     width: 100%;
@@ -44,6 +50,12 @@ button {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transform: scale(1.5);
+    transition: transform 0.25s;
+
+    .menu__open & {
+      transform: scale(1);
+    }
 
     a {
       color: var(--mainColor);

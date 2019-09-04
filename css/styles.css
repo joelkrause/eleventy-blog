@@ -262,7 +262,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .container {
@@ -368,6 +368,13 @@ button#nav__toggle span:not(:last-of-type) {
   display: flex;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.menu__open .site__header {
+  opacity: 1;
+  visibility: visible;
 }
 
 .site__header-nav {
@@ -386,6 +393,17 @@ button#nav__toggle span:not(:last-of-type) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.menu__open .site__header-nav {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .site__header-nav a {

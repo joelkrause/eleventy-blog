@@ -1,6 +1,6 @@
-var menu = document.getElementById('nav__toggle');
-var body = document.getElementsByTagName('body');
+var el = document.querySelector('#nav__toggle');
+var body = document.querySelector('body');
 
-menu.onclick = function() {
-    body.classList.toggle("menu__open");
+el.onclick = function () {
+  body.classList.toggle("menu__open");
 }
