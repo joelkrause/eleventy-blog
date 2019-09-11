@@ -19,6 +19,7 @@ sections:
   label: Pages
   create: documents
   match: "**/*"
+  exclude: pages.json
   templates:
   - page
 upload_dir: img
