@@ -334,10 +334,6 @@ a.button {
 }
 
 .site__header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,7 +356,9 @@ a.button {
 }
 
 .site__header-nav {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
