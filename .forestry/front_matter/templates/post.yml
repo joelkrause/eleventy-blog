@@ -31,5 +31,8 @@ fields:
     required: false
   label: Post icon
   description: FontAwesome icon code
+- name: featured
+  type: boolean
+  label: Featured?
 pages:
 - posts/testing-forestry.md
