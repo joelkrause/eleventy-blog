@@ -1,5 +1,6 @@
 # Joel Krause Eleventy Blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/31f18690-909c-4237-b39f-9cc0e3a53605/deploy-status)](https://app.netlify.com/sites/jkrs-eleventy/deploys)
 
 ### Running Eleventy
 
