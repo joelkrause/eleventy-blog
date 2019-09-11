@@ -13,3 +13,5 @@ fields:
     required: false
   label: Layout
   default: layouts/page.njk
+pages:
+- pages/contact.md
