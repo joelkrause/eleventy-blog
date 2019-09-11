@@ -7,13 +7,6 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: page
-  label: Pages
-  create: documents
-  match: "**/*"
-  templates:
-  - page
-- type: directory
   path: posts
   label: Posts
   create: documents
@@ -21,6 +14,13 @@ sections:
   exclude: posts.json
   templates:
   - post
+- type: directory
+  path: page
+  label: Pages
+  create: documents
+  match: "**/*"
+  templates:
+  - page
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
