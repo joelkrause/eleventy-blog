@@ -1,4 +1,4 @@
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 :root {
   --mainColor: #222;
   --accentColor: #27ae60;
@@ -239,17 +239,22 @@ div.code-toolbar > .toolbar span:focus {
 
 body,
 html {
-  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  font-family: 'Lexend Deca', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
-  font-size: 1.05rem;
+  font-size: 18px;
   line-height: 1.75rem;
   color: var(--mainColor);
 }
 
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -328,48 +333,20 @@ a.button {
   color: var(--mainColor);
 }
 
-button#nav__toggle {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 6;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-}
-
-button#nav__toggle span {
-  width: 40px;
-  height: 3px;
-  display: block;
-  background-color: var(--mainColor);
-}
-
-button#nav__toggle span:not(:last-of-type) {
-  margin-bottom: 10px;
-}
-
 .site__header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: 5;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  font-size: 1.25rem;
 }
 
 .menu__open .site__header {
@@ -377,40 +354,29 @@ button#nav__toggle span:not(:last-of-type) {
   visibility: visible;
 }
 
+.site__header-logo a {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
 .site__header-nav {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
-}
-
-.menu__open .site__header-nav {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .site__header-nav a {
   color: var(--mainColor);
-  font-size: 4rem;
   line-height: normal;
   text-decoration: none;
+}
+
+.site__header-nav a:not(:last-of-type) {
+  margin-right: 1rem;
 }
 
 .postlist-item {
